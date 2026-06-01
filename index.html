@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilliant Adrian - Web Developer</title>
+    <meta name="description" content="Portfolio pribadi Moch Brilliant - Web Developer & IT Enthusiast dari Sidoarjo">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https: blob:;
+        connect-src 'self';
+        frame-ancestors 'self';
+        base-uri 'self';
+        form-action 'self';
+    ">>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Particle constellation background -->
+    <canvas id="constellation"></canvas>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="page-frame">
+
+        <!-- ===== NAVBAR ===== -->
+        <header class="navbar" id="navbar">
+            <a href="#home" class="logo">MB<span> Services</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#blog">PROJECT</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Language Toggle -->
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span id="langIcon">🇮🇩</span>
+            </button>
+        </header>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="hero-content" data-reveal>
+                <p class="hero-greeting">HI THERE,</p>
+                <h1 class="hero-title">I Am <span class="typed" id="typed"></span><span class="cursor">|</span></h1>
+                <p class="hero-text">
+                    Hai Saya Brilliant, seorang Freelancer dan Developer muda dari Perbatasan Surabaya - Sidoarjo yang passionate
+                    di bidang teknologi web, otomasi, digital product dan Transportasi. Saya Open to remote work &amp; collaboration!
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-outline">My Work</a>
+                </div>
+            </div>
+            <div class="hero-image" data-reveal>
+                <div class="hero-image-frame">
+                    <!--
+                    ╔══════════════════════════════════════════════════════╗
+                    ║  GANTI FOTO HERO DI SINI                             ║
+                    ║  Taruh foto kamu di folder: images/hero.jpg          ║
+                    ║  Lalu ubah src di bawah menjadi: images/hero.jpg     ║
+                    ╚══════════════════════════════════════════════════════╝
+                    -->
+                    <img src="images/1757856341269.brili (2).png"
+                         alt="Moch Brilliant Adrian Humur - Web Developer">
+                </div>
+                <div class="hero-blob"></div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about" id="about">
+            <div class="about-card" data-reveal>
+                <div class="about-card-inner">
+                    <span class="about-vertical">BRILLIANT</span>
+                    <div class="about-photo">
+                        <!--
+                        ╔══════════════════════════════════════════════════════╗
+                        ║  GANTI FOTO ABOUT DI SINI                            ║
+                        ║  Taruh foto kamu di folder: images/about.jpg         ║
+                        ║  Lalu ubah src di bawah menjadi: images/about.jpg    ║
+                        ╚══════════════════════════════════════════════════════╝
+                        -->
+                        <img src="images/1757856341269.brili (2).png"
+                             alt="Brilliant Adrian">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-info" data-reveal>
+                <h2 class="section-heading">
+                    Halo, Saya 
+                    <span class="rotating-text">
+                        <span class="text-option active">Web Developer</span>
+                        <span class="text-option">Professional Driver</span>
+                    </span>
+                </h2>
+                <p class="about-desc">
+                    Saya Mahasiswa sekaligus Freelancer yang
+                    antusias di dunia teknologi dan Transportasi. Saya berpengalaman membangun website dari nol, Pelayanan Mengemudi selama 5 Tahun, 
+                    mengelola marketplace, serta mengeksplorasi AI automation untuk solusi digital
+                    yang efisien dan modern.
+                </p>
+
+                <ul class="about-list">
+                    <li><span>Nama</span><i>:</i> Moch Brilliant Adrian Handono</li>
+                    <li><span>Umur</span><i>:</i> 21 Tahun</li>
+                    <li><span>Domisili</span><i>:</i> Waru, Sidoarjo</li>
+                    <li><span>Email</span><i>:</i> brilliantmoch@gmail.com</li>
+                    <li><span>Status</span><i>:</i> <span class="badge-available">Available to Work</span></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+            </div>
+        </section>
+
+        <!-- ===== SERVICES ===== -->
+        <section class="services" id="services">
+            <h2 class="section-title" data-reveal>MY <span>SERVICES</span></h2>
+            <div class="services-grid">
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Membangun website profesional dari nol — landing page, company profile, hingga web app sesuai kebutuhan klien.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-house-laptop"></i>
+                    <h3>Remote Work (WFH)</h3>
+                    <p>Siap menerima pekerjaan secara remote / work from home, fleksibel dan komunikatif.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Advisor Product</h3>
+                    <p>Memberikan saran dan konsultasi pengembangan produk digital agar lebih efektif dan tepat sasaran.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-store"></i>
+                    <h3>Admin Marketplace</h3>
+                    <p>Mengelola toko online di berbagai platform marketplace secara profesional dan terorganisir (WFH).</p>
+                </div>
+                <div class="service-card coming-soon" data-reveal>
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Automation <span class="badge-soon">Coming Soon</span></h3>
+                    <p>Otomasi proses bisnis menggunakan kecerdasan buatan untuk meningkatkan efisiensi kerja.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Mini Project Web/App</h3>
+                    <p>Mengerjakan mini project web maupun aplikasi sesuai spesifikasi — cocok untuk tugas, startup, atau MVP.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <i class="fas fa-car"></i>
+                    <h3>Driver Pribadi</h3>
+                    <p>Layanan driver pribadi weekend/hari libur. Pengalaman 5 tahun mengemudi manual & matic, 10.000+ KM Jawa-Bali. Berpengalaman membawa Innova Reborn manual segala medan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO ===== -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="section-title" data-reveal>MY <span>PORTFOLIO</span></h2>
+
+            <div class="portfolio-filters" data-reveal>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <!-- ── PROJECT 1: Web UKM Bola Basket ── -->
+                <div class="portfolio-item portfolio-logo-bg" data-category="web" data-reveal>
+                    <div class="portfolio-logo-wrap">
+                        <img src="https://ukmbaskettelkomsurabaya.com/images/dokum/SIMPLE.png"
+                             alt="Logo UKM Bola Basket Telkom Surabaya"
+                             class="portfolio-logo-img">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Web UKM Basket Telkom</h4>
+                        <span>Web</span>
+                        <a href="https://ukmbaskettelkomsurabaya.com/" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 2: AI Chatbot Chef Spesialis ── -->
+                <div class="portfolio-item portfolio-chatbot-bg" data-category="app" data-reveal>
+                    <div class="portfolio-chatbot-wrap">
+                        <div class="chatbot-icon-big"><i class="fas fa-robot"></i></div>
+                        <p class="chatbot-label">ChefBot AI</p>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>AI Chatbot Chef Spesialis</h4>
+                        <span>App · AI</span>
+                        <a href="https://chatbot-brilliant-groq-puce.vercel.app/" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--
+                ╔══════════════════════════════════════════════════════════════════╗
+                ║  TEMPLATE TAMBAH PORTFOLIO BARU — DUPLIKAT BLOK INI             ║
+                ║  data-category: web | app | design                              ║
+                ║  Ganti src gambar → images/portfolio/nama-file.jpg              ║
+                ╚══════════════════════════════════════════════════════════════════╝
+
+                <div class="portfolio-item" data-category="web" data-reveal>
+                    <img src="images/portfolio/nama-proyek.jpg" alt="Nama Proyek">
+                    <div class="portfolio-overlay">
+                        <h4>Nama Proyek</h4>
+                        <span>Web</span>
+                        <a href="https://link-proyek.com" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                -->
+
+                <!-- ── PROJECT 3: Web Absensi Realtime ── -->
+                <div class="portfolio-item portfolio-icon-bg portfolio-absensi-bg" data-category="web" data-reveal>
+                    <span class="portfolio-wip">🚧 In Dev</span>
+                    <div class="portfolio-icon-wrap">
+                        <i class="fas fa-clipboard-check" style="color:#2ecc71;"></i>
+                        <span>Web Absensi</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Web Absensi Realtime</h4>
+                        <span>Web · Supabase</span>
+                        <a href="https://web-absensi-realtime.vercel.app/" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 4: Landing Page Guardian Store ── -->
+                <div class="portfolio-item portfolio-icon-bg portfolio-landing-bg" data-category="web" data-reveal>
+                    <div class="portfolio-icon-wrap">
+                        <i class="fas fa-store" style="color:#f39c12;"></i>
+                        <span>Guardian Store</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Landing Page Guardian Store</h4>
+                        <span>Web · AI Chatbot WA</span>
+                        <a href="https://landingpage-ai-chatbotwa-kelompok3.vercel.app/" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 5: Web Anniversary ── -->
+                <div class="portfolio-item portfolio-icon-bg portfolio-anniv-bg" data-category="web" data-reveal>
+                    <div class="portfolio-icon-wrap">
+                        <i class="fas fa-heart" style="color:#e74c3c;"></i>
+                        <span>Happy Anniversary</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Web Surprise Anniversary</h4>
+                        <span>Web · Special Project</span>
+                        <a href="https://happy-anniversary-blinsybrilliant-pi.vercel.app/" target="_blank" rel="noopener" class="portfolio-icon">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Project Experience -->
+            <div class="project-exp" data-reveal>
+                <h3 class="project-exp-title">PROJECT <span>EXPERIENCE</span></h3>
+                <div class="stats">
+                <div class="stat-box" data-reveal>
+                    <div class="stat-num"><h3 class="counter" data-target="5">0</h3><span>+</span></div>
+                    <p>Live Projects</p>
+                </div>
+                <div class="stat-box" data-reveal>
+                    <div class="stat-num"><h3 class="counter" data-target="3">0</h3><span>+</span></div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box" data-reveal>
+                    <div class="stat-num"><h3 class="counter" data-target="2">0</h3><span>+</span></div>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box" data-reveal>
+                    <div class="stat-num"><h3 class="counter" data-target="6">0</h3><span>+</span></div>
+                    <p>Tech Stack</p>
+                </div>
+            </div>
+            </div><!-- end .project-exp -->
+        </section>
+
+        <!-- ===== BLOG / KARYA ===== -->
+        <section class="blog" id="blog">
+            <h2 class="section-title" data-reveal>MY <span>WORKS</span></h2>
+            <div class="blog-grid">
+
+                <!-- Karya 1: Web UKM Bola Basket Telkom -->
+                <article class="blog-card" data-reveal>
+                    <div class="blog-img blog-img-logo">
+                        <img src="https://ukmbaskettelkomsurabaya.com/images/dokum/SIMPLE.png"
+                             alt="Logo UKM Bola Basket Telkom Surabaya"
+                             class="blog-logo-img">
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag">Web Development</span>
+                        <h3>Web UKM Bola Basket Telkom Surabaya</h3>
+                        <p>Website resmi UKM Bola Basket Universitas Telkom Surabaya — informasi tim, jadwal, dan berita terkini.</p>
+                        <a href="https://ukmbaskettelkomsurabaya.com/" target="_blank" rel="noopener" class="blog-link">
+                            Visit Site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Karya 2: AI Chatbot Chef Spesialis -->
+                <article class="blog-card" data-reveal>
+                    <div class="blog-img blog-img-chatbot">
+                        <div class="blog-chatbot-inner">
+                            <i class="fas fa-robot"></i>
+                            <span>ChefBot AI</span>
+                        </div>
+                        <span class="blog-date">AI <small>BOT</small></span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag">AI · Chatbot</span>
+                        <h3>AI Chatbot Chef Spesialis</h3>
+                        <p>Chatbot berbasis AI yang memberikan rekomendasi makanan dan menu restoran sesuai preferensi pengguna.</p>
+                        <a href="https://chatbot-brilliant-groq-puce.vercel.app/" target="_blank" rel="noopener" class="blog-link">
+                            Try ChefBot <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Karya 3: GitHub -->
+                <article class="blog-card" data-reveal>
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500&q=80&auto=format&fit=crop"
+                             alt="GitHub MohBrilliantAhs">
+                        <span class="blog-date">GIT <small>HUB</small></span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag">Open Source</span>
+                        <h3>GitHub — MohBrilliantAh</h3>
+                        <p>Kumpulan repository project saya di GitHub — dari mini project, web app, hingga eksperimen teknologi terbaru.</p>
+                        <a href="https://github.com/MohBrilliantAh" target="_blank" rel="noopener" class="blog-link">
+                            View GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact" id="contact">
+            <h2 class="section-title" data-reveal>GET IN <span>TOUCH</span></h2>
+            <div class="contact-wrap">
+                <div class="contact-info" data-reveal>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><h4>Domisili</h4><p>Waru, Sidoarjo, Jawa Timur</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><h4>Email</h4><p>brilliantmoch@gmail.com</p></div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/MohBrilliantAhs" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mochbrilliantah/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jaychanadrian/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6282142095898" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:brilliantmoch@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" action="mailto:brilliantmoch@gmail.com" method="post" enctype="text/plain" data-reveal>
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Nama Kamu" required>
+                        <input type="email" name="email" placeholder="Email Kamu" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subjek">
+                    <textarea name="message" placeholder="Pesan Kamu" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    <p class="form-feedback" id="formFeedback"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <a href="#home" class="logo">MB<span> Services</span></a>
+            <p>&copy; 2026 Mohammad Brilliant <i class="fas fa-galaxy"></i></p>
+        </footer>
+
+    </div>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer" aria-label="Background music player">
+        <i class="fas fa-music"></i>
+    </div>
+    <audio id="bgMusic" loop autoplay>
+        <!--
+        ╔══════════════════════════════════════════════════════════╗
+        ║  TARUH FILE MUSIK DI SINI                                ║
+        ║  1. Taruh file musik di folder: music/background.mp3     ║
+        ║  2. Ubah src di bawah: src="music/background.mp3"        ║
+        ║  Format support: MP3, OGG, WAV                           ║
+        ╚══════════════════════════════════════════════════════════╝
+        -->
+        <source src="music/background.mp3" type="audio/mpeg">
+        <source src="music/background.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
