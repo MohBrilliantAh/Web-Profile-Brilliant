@@ -1,6 +1,6 @@
 # 🌟 Brilliant Adrian - Portfolio Website
 
-Portfolio pribadi **Moch Brilliant Adrian Humur** — Web Developer, Freelancer, dan Professional Driver dari Sidoarjo.
+Portfolio pribadi **Moch Brilliant Adrian Handono** — Web Developer, Freelancer, dan Professional Driver dari Sidoarjo.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
