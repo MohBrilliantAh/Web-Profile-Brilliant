@@ -169,7 +169,7 @@ Drag & drop folder `web_profile` ke [Netlify Drop](https://app.netlify.com/drop)
 - 📱 WhatsApp: [082142095898](https://wa.me/6282142095898)
 - 📧 Email: brilliantmoch@gmail.com
 - 💼 LinkedIn: [mochbrilliantah](https://www.linkedin.com/in/mochbrilliantah/)
-- 🐙 GitHub: [MohBrilliantAhs](https://github.com/MohBrilliantAhs)
+- 🐙 GitHub: [MohBrilliantAh](https://github.com/MohBrilliantAhs)
 - 📸 Instagram: [jaychanadrian](https://www.instagram.com/jaychanadrian/)
 
 ---
