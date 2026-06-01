@@ -27,7 +27,7 @@ Portfolio pribadi **Moch Brilliant Adrian Handono** — Web Developer, Freelance
 
 ### 1. Clone / Download
 ```bash
-git clone https://github.com/MohBrilliantAhs/web_profile.git
+git clone https://github.com/MohBrilliantAh/web_profile.git
 cd web_profile
 ```
 
