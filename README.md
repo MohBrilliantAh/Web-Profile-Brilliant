@@ -1,6 +1,6 @@
 # 🌟 Brilliant Adrian - Portfolio Website
 
-Portfolio pribadi **Moch Brilliant Adrian Humur** — Web Developer, Freelancer, dan Professional Driver dari Sidoarjo.
+Portfolio pribadi **Moch Brilliant Adrian Handono** — Web Developer, Freelancer, dan Professional Driver dari Sidoarjo.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -27,7 +27,7 @@ Portfolio pribadi **Moch Brilliant Adrian Humur** — Web Developer, Freelancer,
 
 ### 1. Clone / Download
 ```bash
-git clone https://github.com/MohBrilliantAhs/web_profile.git
+git clone https://github.com/MohBrilliantAh/web_profile.git
 cd web_profile
 ```
 
@@ -165,18 +165,18 @@ Drag & drop folder `web_profile` ke [Netlify Drop](https://app.netlify.com/drop)
 
 ## 📧 Kontak
 
-**Moch Brilliant Adrian Humur**
+**Moch Brilliant Adrian H**
 - 📱 WhatsApp: [082142095898](https://wa.me/6282142095898)
 - 📧 Email: brilliantmoch@gmail.com
 - 💼 LinkedIn: [mochbrilliantah](https://www.linkedin.com/in/mochbrilliantah/)
-- 🐙 GitHub: [MohBrilliantAhs](https://github.com/MohBrilliantAhs)
+- 🐙 GitHub: [MohBrilliantAh](https://github.com/MohBrilliantAhs)
 - 📸 Instagram: [jaychanadrian](https://www.instagram.com/jaychanadrian/)
 
 ---
 
 ## 📄 License
 
-MIT License - bebas digunakan untuk personal maupun komersial.
+MIT License - bebas digunakan untuk personal maupun komersial (izin dulu lebih baik).
 
 ---
 
