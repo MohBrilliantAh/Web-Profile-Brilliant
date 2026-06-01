@@ -165,7 +165,7 @@ Drag & drop folder `web_profile` ke [Netlify Drop](https://app.netlify.com/drop)
 
 ## 📧 Kontak
 
-**Moch Brilliant Adrian Humur**
+**Moch Brilliant Adrian H**
 - 📱 WhatsApp: [082142095898](https://wa.me/6282142095898)
 - 📧 Email: brilliantmoch@gmail.com
 - 💼 LinkedIn: [mochbrilliantah](https://www.linkedin.com/in/mochbrilliantah/)
@@ -176,7 +176,7 @@ Drag & drop folder `web_profile` ke [Netlify Drop](https://app.netlify.com/drop)
 
 ## 📄 License
 
-MIT License - bebas digunakan untuk personal maupun komersial.
+MIT License - bebas digunakan untuk personal maupun komersial (izin dulu lebih baik).
 
 ---
 
